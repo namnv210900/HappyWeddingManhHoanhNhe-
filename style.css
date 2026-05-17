@@ -1,4 +1,4 @@
-.font_fancy{
+.font_fancy {
     font-family: "Alex Brush", cursive;
     font-weight: 500;
     font-style: normal;
@@ -17,7 +17,7 @@
     font-family: 'Times New Roman', Times, serif;
 }
 
-.font_montserrat{
+.font_montserrat {
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
     font-weight: 300;
@@ -30,7 +30,7 @@
     font-weight: 400;
     font-style: normal;
     font-variation-settings:
-    "wdth" 100;
+        "wdth" 100;
 }
 
 #audioIndicator {
@@ -43,17 +43,17 @@
     border-radius: 50%;
     cursor: pointer;
     user-select: none;
-  }
+}
 
-  #audioIndicator > img {
+#audioIndicator>img {
     display: block;
-  }
+}
 
 /* HTML................................................................. */
 
 html {
     scroll-behavior: smooth;
-    background-color:#f0f8ff;
+    background-color: #f0f8ff;
 
     overflow-x: hidden;
     /* overflow-y: hidden; */
@@ -93,9 +93,11 @@ body {
     0% {
         transform: scale(1);
     }
+
     50% {
         transform: scale(1.05);
     }
+
     100% {
         transform: scale(1);
     }
@@ -105,7 +107,7 @@ body {
     content: "";
     position: absolute;
     inset: 0;
-    background-image: url(./source/doc/back_thiep.svg);
+    background-image: url(./source/ImangePage1.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -148,9 +150,9 @@ body {
     font-size: 36px;
 }
 
-.thiep_name > p {
+.thiep_name>p {
     text-transform: uppercase;
-    
+
 }
 
 .thiep_small {
@@ -260,7 +262,8 @@ body {
     margin-top: 18px;
     height: 1px;
     background-color: white;
-    width: 200px; /* giống hr-wrapper */
+    width: 200px;
+    /* giống hr-wrapper */
     margin-left: auto;
     margin-right: auto;
     border: none;
@@ -272,7 +275,8 @@ body {
 }
 
 .thiep_map {
-    display: block; /* Đảm bảo ảnh nền hiển thị */
+    display: block;
+    /* Đảm bảo ảnh nền hiển thị */
     width: 16px;
     height: 16px;
     display: flex;
@@ -288,7 +292,7 @@ body {
     border: 1px solid rgb(125, 125, 125);
 }
 
-.thiep_map > img {
+.thiep_map>img {
     width: 16px;
     height: 16px;
 }
@@ -314,22 +318,24 @@ body {
     font-weight: bold;
     margin-bottom: 16px;
     color: #712f00;
-    
+
 }
 
 .gt_img {
     position: relative;
-    width: 90%;
-    aspect-ratio: 1 / 1; /* cắt vuông */
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    /* cắt vuông */
     overflow: hidden;
     border-radius: 20px;
-    margin-bottom: 18px;
+    margin-bottom: 10px;
 }
 
 .gt_img img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: top;
     border-radius: 20px;
     display: block;
 }
@@ -353,6 +359,7 @@ body {
         opacity: 0;
         transform: translateY(40px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -369,4 +376,3 @@ body {
 .gt_img.show {
     animation: fadeInUp 1.8s ease forwards;
 }
-

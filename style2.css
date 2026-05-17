@@ -49,12 +49,13 @@
 }
 
 @keyframes flash-shadow-img {
-    0%, 100% 
-    {
+
+    0%,
+    100% {
         box-shadow: 0 0 5px rgba(157, 157, 157, 0.534);
     }
-    50% 
-    {
+
+    50% {
         box-shadow: 0 0 7px rgba(60, 60, 60, 0.556);
     }
 }
@@ -114,23 +115,24 @@
 }
 
 @keyframes flash-shadow {
-    0%, 100% 
-    {
+
+    0%,
+    100% {
         box-shadow: 0 0 12px rgb(208, 211, 211);
     }
-    50% 
-    {
+
+    50% {
         box-shadow: 0 0 15px rgb(179, 190, 188);
     }
 }
 
 .nhay-shadow {
-animation: flash-shadow 2s infinite;
+    animation: flash-shadow 2s infinite;
 }
 
 
 
-.cf_container > div {
+.cf_container>div {
     margin-top: 8px;
 }
 
@@ -138,13 +140,13 @@ animation: flash-shadow 2s infinite;
     font-weight: bold;
     text-transform: uppercase;
     font-size: 18px;
-    
+
 }
 
 .cf_desc2 {
     text-transform: uppercase;
     font-size: 16px;
-    
+
 }
 
 .cf_desc3 {
@@ -179,7 +181,7 @@ animation: flash-shadow 2s infinite;
     font-size: 13.8px;
 }
 
-.cf_btn > a {
+.cf_btn>a {
     text-decoration: none;
     color: black;
 }
@@ -239,7 +241,7 @@ animation: flash-shadow 2s infinite;
     scroll-snap-align: start;
     /* max-width: 85%; */
     position: relative;
-    
+
     /* background-color: black; */
 }
 
@@ -247,11 +249,11 @@ animation: flash-shadow 2s infinite;
     opacity: 0.8;
     transform: scale(0.8);
     transition: opacity 0.2s linear, transform 0.2s linear;
-  }
-  
+}
 
 
-.popup_item > img {
+
+.popup_item>img {
     border-radius: 18px;
     width: 100%;
     height: 100%;
@@ -267,7 +269,7 @@ animation: flash-shadow 2s infinite;
         /* gap: 12px; */
     }
 }
-  
+
 
 /* transform: translateX(60px) */
 /* transform: translateX(-60px) */
@@ -279,7 +281,8 @@ animation: flash-shadow 2s infinite;
     width: 8%;
     height: 6%;
     /* background-color: rgba(255, 0, 0, 0.312); */
-    z-index: 4; /* đảm bảo nổi lên trên */
+    z-index: 4;
+    /* đảm bảo nổi lên trên */
     cursor: pointer;
 }
 
@@ -298,22 +301,26 @@ animation: flash-shadow 2s infinite;
     z-index: 5;
     font-size: 14px;
     font-family: 'Times New Roman', Times, serif;
-  }
-  #copy-toast.show {
+}
+
+#copy-toast.show {
     opacity: 1;
-  }
+}
 
 
 .hide-horizontal-scrollbar {
     overflow-x: scroll;
     overflow-y: hidden;
-    scrollbar-width: none; /* Firefox */
-    -ms-overflow-style: none; /* IE, Edge cũ */
-  }
-  
-  .hide-horizontal-scrollbar::-webkit-scrollbar {
-    height: 0px; /* Chrome, Safari */
-  }
+    scrollbar-width: none;
+    /* Firefox */
+    -ms-overflow-style: none;
+    /* IE, Edge cũ */
+}
+
+.hide-horizontal-scrollbar::-webkit-scrollbar {
+    height: 0px;
+    /* Chrome, Safari */
+}
 
 /* album....................................................................................... */
 
@@ -341,11 +348,12 @@ animation: flash-shadow 2s infinite;
 
 .album_container {
     column-count: 2;
-    column-gap: 1.5%; /* Khoảng cách giữa 2 cột */
+    column-gap: 1.5%;
+    /* Khoảng cách giữa 2 cột */
     padding: 8px;
 }
 
-.album_container > img {
+.album_container>img {
     width: 100%;
     display: block;
     margin-bottom: 3%;
@@ -367,7 +375,7 @@ animation: flash-shadow 2s infinite;
 .thank_container {
     height: 100vh;
     width: 100%;
-    background-image: url(./source/doc/cam_dep.svg);
+    background-image: url(./source/thankyou.jpg);
     position: relative;
     overflow: hidden;
     background-repeat: no-repeat;
@@ -377,13 +385,13 @@ animation: flash-shadow 2s infinite;
     justify-content: center;
     display: flex;
     flex-direction: column;
-    
+
 }
 
-.thank_desc > img {
+.thank_desc>img {
     height: 50px;
     margin-top: 12px;
-    
+
 }
 
 .thank_desc {

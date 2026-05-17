@@ -1,30 +1,198 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wedding Ngọc Lan & Nguyễn Tiến</title>
+    <title>Wedding Thùy Linh & Mạnh Hoàng</title>
     <link rel="stylesheet" href="./style.css?v=19.9">
     <link rel="stylesheet" href="./style2.css?v=19.9">
     <script src="js.js?v=19.9"></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Newsreader:opsz,wght@6..72,500&family=Noto+Serif+Display&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Newsreader:opsz,wght@6..72,500&family=Noto+Serif+Display&display=swap"
+        rel="stylesheet">
 
-    <meta property="og:title" content="Lễ Thành Hôn Ngọc Lan & Nguyễn Tiến"/>
-    <meta property="og:description" content="Thiệp mời dự Lễ Thành Hôn"/>
-    <meta property="og:image" content="https://thiepcuoitienlan.id.vn/source/meta.jpg" />
+    <meta property="og:title" content="Lễ Thành Hôn Thùy Linh & Mạnh Hoàng" />
+    <meta property="og:description" content="Thiệp mời dự Lễ Thành Hôn" />
+    <meta property="og:image" content="./source/ImangePage1.jpg" />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://thiepcuoitienlan.id.vn" />
+    <meta property="og:url" content="" />
     <link rel="icon" href="source/favicon.png" type="image/png">
 
 
-    <link rel="preload" as="image" href="./source/doc/back_thiep.svg" />
+    <link rel="preload" as="image" href="./source/ImangePage1.jpg" />
     <link rel="preload" as="audio" href="./source/music.mp3" type="audio/mpeg" />
     <link rel="preload" as="image" href="./source/doc/cam_anh.svg" />
     <link rel="preload" as="image" href="./source/doc/xanh_chi.svg" />
 
+    <style>
+        .wedding-header {
+            font-size: 36px;
+            letter-spacing: 6px;
+            color: #712f00;
+            margin-bottom: 20px;
+            margin-top: 10px;
+        }
+
+        .parents-grid {
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        .parent-col {
+            width: 48%;
+            text-align: center;
+        }
+
+        .parent-col h3 {
+            font-size: 20px;
+            color: #333;
+            margin-bottom: 15px;
+            display: inline-block;
+        }
+
+        .parent-col p {
+            font-size: 13px;
+            color: #333;
+            line-height: 1.6;
+            margin-bottom: 5px;
+        }
+
+        .parent-col .names {
+            font-size: 32px;
+            color: #712f00;
+            margin-top: 15px;
+        }
+
+        .thu-moi-title {
+            font-size: 40px;
+            color: #333;
+            margin-top: 10px;
+        }
+
+        .thu-moi-sub {
+            font-size: 13px;
+            text-transform: uppercase;
+            color: #333;
+            margin-bottom: 30px;
+        }
+
+        .event-details {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .main-time {
+            font-size: 24px;
+            color: #712f00;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+            margin-top: 10px;
+            margin-bottom: 5px;
+        }
+
+        .main-time span.divider {
+            font-weight: 100;
+            color: #333;
+        }
+
+        .lunar-date {
+            font-size: 13px;
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        .location-title {
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .location-name {
+            font-size: 22px;
+            color: #712f00;
+            margin-bottom: 5px;
+        }
+
+        .location-address {
+            font-size: 13px;
+            color: #555;
+            margin-bottom: 15px;
+        }
+
+        .parties-grid {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            margin-top: 20px;
+            gap: 10px;
+        }
+
+        .party-col {
+            flex: 1;
+            background: #ffffff;
+            border-radius: 10px;
+            padding: 10px 5px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .party-title {
+            background: #712f00;
+            color: white;
+            padding: 8px 5px;
+            border-radius: 15px;
+            font-size: 14px;
+            margin-bottom: 10px;
+            min-height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .party-col p {
+            font-size: 13px;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .party-col .bold {
+            font-weight: bold;
+        }
+
+        .btn-map {
+            display: inline-block;
+            background: #712f00;
+            color: white;
+            text-decoration: none;
+            padding: 6px 15px;
+            border-radius: 20px;
+            font-size: 13px;
+            margin-top: 10px;
+            transition: all 0.3s ease;
+        }
+
+        .btn-map:hover {
+            background: #5a2500;
+        }
+
+        /* Style adjustments for existing components to match new layout */
+        .thiep_blur-bg {
+            background: rgba(255, 255, 255, 0.95) !important;
+            color: #333 !important;
+        }
+
+        .thiep_container {
+            text-shadow: none !important;
+            padding: 15px !important;
+        }
+    </style>
 
 </head>
 
@@ -36,77 +204,86 @@
 
 
 
-<body>      
+<body>
     <div id="audioIndicator">
         <img src="./source/volume.svg" alt="">
-        
+
     </div>
     <!-- thiệp -->
     <div class="thiep">
         <div class="thiep_blur-bg">
             <div class="thiep_container">
-                <!-- Phần 0 -->
-                <div class="thiep_des">
-                    <p class="font_fancy">Save the Date</p>
-                </div>
-                <!-- Phần 1 -->
-                <div class="thiep_name">
-                    <p class="font_thanh_dam">Nguyễn Tiến</p>
-                    <p class="font_thanh_dam thiep_small">&</p>
-                    <p class="font_thanh_dam">Ngọc Lan</p>
-                </div>
-                <!-- Phần 2 -->
-                <div class="thiep_date_box font_thanh_dam">
-                    <hr class="hr-wrapper">
-                    <div class="thiep_space"></div>
-                    <div class="thiep_date_row">
-                      <div class="thiep_item">
-                        <hr>
-                        <span class="padding_day">THỨ BA</span>
-                        <hr>
-                      </div>
-                      <div class="thiep_main_date">29</div>
-                      <div class="thiep_item">
-                        <hr>
-                        <span class="padding_hour">11H00</span>
-                        <hr>
-                      </div>
+                <div class="wedding-header font_thanh_dam">W E D D I N G</div>
+
+                <div class="parents-grid">
+                    <div class="parent-col">
+                        <h3 class="font_thanh_dam">Nhà Trai</h3>
+                        <p class="font_montserrat">Ông : Nguyễn Văn Dung</p>
+                        <p class="font_montserrat">Bà : Nguyễn Thị Hường</p>
+                        <p class="font_montserrat" style="font-size: 11px; margin-top: 5px;">Xóm 5 - Yên Mỹ - Hạ Bằng -
+                            Hà Nội</p>
+                        <div class="names font_fancy">Mạnh Hoàng</div>
                     </div>
-                    <div class="thiep_month_year">04.2025</div>
-                  </div>
-                  
-                <!-- Phần 3 -->
-                <div class="thiep_add">
-                    <p class="font_fancy add_fancy">Địa điểm tổ chức</p>
-                    <p class="font_thanh_dam add_big">GIA ĐÌNH NHÀ TRAI</p>
-                    <p class="font_thanh_dam add_small">Thôn 12 - Xã Quỳnh Vinh</p>
-                    <p class="font_thanh_dam add_small">Thị xã Hoàng Mai - Tỉnh Nghệ An </p>
-                    <hr class="hr-add">
+                    <div class="parent-col">
+                        <h3 class="font_thanh_dam">Nhà Gái</h3>
+                        <p class="font_montserrat">Ông : Bùi Quang Trung</p>
+                        <p class="font_montserrat">Bà : Vương Thị Thương</p>
+                        <p class="font_montserrat" style="font-size: 11px; margin-top: 5px;">17 Xóm 5 - Yên Mỹ - Hạ Bằng
+                            - Hà Nội</p>
+                        <div class="names font_fancy">Thùy Linh</div>
+                    </div>
                 </div>
 
-                <!-- phần icon -->
-                <div class="thiep_all_icon">
-                    <a class="thiep_map" href="https://maps.app.goo.gl/xfMHyt22JnTG3dLf8">
-                        <img src="./source/pin_map.svg" alt="">
-                    </a>
+                <div style="border-top: 1px solid #712f00; margin: 10px auto 20px; width: 80%;"></div>
+
+                <div class="thu-moi-title font_fancy">Thư Mời</div>
+                <div class="thu-moi-sub font_montserrat">Tham dự lễ Thành Hôn của CHÚNG MÌNH(con)</div>
+
+                <div class="event-details font_montserrat">
+                    <div style="margin-bottom: 5px;">Vào Lúc</div>
+                    <div class="main-time font_thanh_dam">
+                        12:00 <span class="divider">|</span> 31.05.2026 <span class="divider">|</span> Chủ Nhật
+                    </div>
+                    <div class="lunar-date">Tức ngày 15 tháng 04 năm Bính Ngọ</div>
+
+                    <div class="location-title">Tại</div>
+                    <div class="location-name font_thanh_dam">Tư Gia Nhà Trai</div>
+                    <div class="location-address">Số nhà 28 - Xóm 5 - Yên Mỹ - Hạ Bằng - Hà Nội</div>
+
+
                 </div>
-                    
-                
+
+                <div class="parties-grid">
+                    <div class="party-col">
+                        <div class="party-title font_thanh_dam">Tiệc Mời Cưới Nhà Trai</div>
+                        <p class="bold font_montserrat">8h - Chủ Nhật</p>
+                        <p class="font_montserrat">31 . 5 . 2026</p>
+                        <p class="font_montserrat">15/4 âm lịch</p>
+                        <p class="font_montserrat" style="margin-top: 10px;">Tại tư Gia Nhà Trai</p>
+
+                    </div>
+                    <div class="party-col">
+                        <div class="party-title font_thanh_dam">Tiệc Mời Cưới Nhà Gái</div>
+                        <p class="bold font_montserrat">17h00 - Thứ bảy</p>
+                        <p class="font_montserrat">30 . 5 . 2026</p>
+                        <p class="font_montserrat">14/4 âm lịch</p>
+                        <p class="font_montserrat" style="margin-top: 10px;">Tại tư Gia Nhà Gái</p>
+
+                    </div>
+                </div>
             </div>
-
         </div>
-    
     </div>
 
     <div class="gt_container">
         <div class="gt_des font_montserrat"> Giới thiệu </div>
         <div class="gt_des2 font_thanh_dam"> Chú Rể và Cô Dâu </div>
         <div class="gt_img">
-            <img src="./source/re.svg" alt="">
+            <img src="./source/chure.jpg" alt="">
             <!-- <p class="caption font_thanh_dam">Nguyễn Tiến</p> -->
         </div>
         <div class="gt_img">
-            <img src="./source/dau.svg" alt="">
+            <img src="./source/codau.jpg" alt="">
             <!-- <p class="caption font_thanh_dam">Ngọc Lan</p> -->
         </div>
 
@@ -116,47 +293,22 @@
     <!-- Mời -->
     <div class="moi_container">
         <div class="moi_desc1 font_fancy">Thư mời</div>
-        <div class="moi_desc2 font_tnr">Tham dự Lễ cưới của Nguyễn Tiến & Ngọc Lan</div>
+        <div class="moi_desc2 font_tnr">Tham dự Lễ cưới của Mạnh Hoàng & Thùy Linh</div>
         <div class="moi_img">
-            <img class="img_small js_l js_left" src="./source/doc/xanh_1.svg" alt="">
-            <img class="img_big js_center" src="./source/doc/xanh_2.svg" alt="">
-            <img class="img_small js_r js_right" src="./source/doc/xanh_3_lat.svg" alt="">            
+            <img class="img_small js_l js_left" src="./source/concept1.jpg" alt="">
+            <img class="img_big js_center" src="./source/concept8.jpg" alt="">
+            <img class="img_small js_r js_right" src="./source/concept3.jpg" alt="">
         </div>
 
-        <div class="moi_desc3 font_tnr">   Tình yêu là nguồn sáng soi rọi mọi khoảnh khắc. 
-            Và những khoảnh khắc ấy đã trở thành vĩnh cửu khi chúng tôi quyết định dành 
-            trọn quãng đời còn lại bên nhau. Chúng tôi, bằng cả tấm lòng, xin chân thành 
-            mời bạn đến chung vui trong ngày lễ trọng đại này. Sự hiện diện của bạn sẽ  
+        <div class="moi_desc3 font_tnr"> Tình yêu là nguồn sáng soi rọi mọi khoảnh khắc.
+            Và những khoảnh khắc ấy đã trở thành vĩnh cửu khi chúng tôi quyết định dành
+            trọn quãng đời còn lại bên nhau. Chúng tôi, bằng cả tấm lòng, xin chân thành
+            mời bạn đến chung vui trong ngày lễ trọng đại này. Sự hiện diện của bạn sẽ
             làm cho ngày vui của chúng tôi càng thêm phần ý nghĩa!</div>
     </div>
 
-    <!-- confirm -->
-    <div class="cf_container nhay-shadow">
-        <div class="cf_desc1">Lễ Thành Hôn</div>
-        <div class="cf_desc2">Thứ Ba | 11h00</div>
-        <div class="cf_desc3">29.04.2025</div>
-        <div class="cf_desc4">(Tức Ngày 2 Tháng 4 Năm Ất Tỵ)</div>
-        <button class="cf_btn font_tnr">
-            <a href="https://forms.gle/7zeeJpgnDbF1wN2F8">Xác nhận tham dự</a>
-        </button>
-        <button class="cf_btn js_qr font_tnr">
-            Gửi quà mừng
-        </button>
-    </div>
-    
-    <!-- pop-up -->
-    <div class="popup">
-        <div class="popup_container hide-horizontal-scrollbar">
-            <div class="popup_item popup_item1">
-                <img src="./source/ngang/qr_anh.svg" alt="">
-                <div class="copy copy_anh" data-copy="107877815585"></div>
-            </div>
-            <div class="popup_item popup_item2">
-                <img src="./source/ngang/qr_chi.svg" alt="">
-                <div class="copy copy_chi" data-copy="3624205122197"></div>
-            </div>
-        </div>
-    </div>
+
+
     <!-- album -->
     <div id="copy-toast">Đã copy!</div>
 
@@ -165,62 +317,38 @@
         <div class="line"></div>
     </div>
     <div class="album_container">
-        <img class="js_album album_left" src="./source/ngang/cam_n_1.svg" alt="">
-        <img class="js_album album_left" src="./source/doc/xam_1.svg" alt="">
-        <img class="js_album album_left" src="./source/doc/xanh_hon.svg" alt="">
-        <img class="js_album album_left" src="./source/ngang/do_n.svg" alt="">
-        <img class="js_album album_left" src="./source/doc/xanh_2.svg" alt="">
-        <img class="js_album album_left" src="./source/doc/cam_2.svg" alt="">
+        <img class="js_album album_left" src="./source/concept1.jpg" alt="">
+        <img class="js_album album_left" src="./source/concept2.jpg" alt="">
+        <img class="js_album album_left" src="./source/concept3.jpg" alt="">
+        <img class="js_album album_left" src="./source/concept4.jpg" alt="">
+        <img class="js_album album_left" src="./source/concept5.jpg" alt="">
+        <img class="js_album album_left" src="./source/concept6.jpg" alt="">
         <!-- <img class="js_album album_left" src="./source/doc/cam_3.svg" alt=""> -->
-        <img class="js_album album_right" src="./source/doc/xanh_3.svg" alt="">
-        <img class="js_album album_right" src="./source/doc/do.svg" alt="">
-        <img class="js_album album_right" src="./source/ngang/xam_n.svg" alt=""> 
-        <img class="js_album album_right" src="./source/doc/cam_4.svg" alt="">
-        <img class="js_album album_right" src="./source/doc/xam_3.svg" alt="">
+        <img class="js_album album_right" src="./source/Concept7.jpg" alt="">
+        <img class="js_album album_right" src="./source/concept8.jpg" alt="">
+        <img class="js_album album_right" src="./source/concept9.jpg" alt="">
+        <img class="js_album album_right" src="./source/concept10.jpg" alt="">
+        <img class="js_album album_right" src="./source/concept11.jpg" alt="">
         <!-- <img class="js_album album_right" src="./source/doc/cam_5.svg" alt=""> -->
-        <img class="js_album album_right" src="./source/ngang/xanh_n.svg" alt="">
-        
+
     </div>
 
     <!-- Thanks -->
     <div class="thank_container">
-        
+
         <div class="thank_desc">
             <img src="./source/thank.svg" alt="">
             <p>Rất hân hạnh được đón tiếp!</p>
         </div>
-        <div class="footter">
-            © 04/2025 Website by Nguyen Van Hoang | 
-            <a href="https://thiepcuoitienlan.id.vn/" class="footer-link" target="_blank" rel="noopener noreferrer">thiepcuoitienlan.id.vn</a>
-        </div>
+
     </div>
-    
+
 
 </body>
+
 </html>
 
 <script>
-    window.addEventListener('DOMContentLoaded', () => {
-        const items = document.querySelectorAll('.thiep_item');
-    const container = document.querySelector('.thiep_date_box');
-    if (items.length === 2 && container) {
-      const left = items[0].getBoundingClientRect().left;
-      const right = items[1].getBoundingClientRect().right;
-      const containerLeft = container.getBoundingClientRect().left;
-      const width = right - left;
-
-      const hr = document.querySelector('.hr-wrapper');
-      hr.style.width = width + 'px';
-      hr.style.left = (left - containerLeft) + 'px';
-      hr.style.transform = 'none';
-
-      const hr_add = document.querySelector('.hr-add');
-      hr_add.style.width = width + 'px';
-      hr_add.style.left = (left - containerLeft) + 'px';
-      hr_add.style.transform = 'none';
-      }
-    });
-
     const btn_qr = document.querySelector('.js_qr')
     const pop_up = document.querySelector('.popup')
     const pop_up_ctn = document.querySelector('.popup_container')
@@ -237,10 +365,10 @@
 
     btn_qr.addEventListener('click', show_pop_up)
     pop_up.addEventListener('click', hide_pop_up)
-    pop_up_item1.addEventListener('click', function(event) {
+    pop_up_item1.addEventListener('click', function (event) {
         event.stopPropagation();
     })
-    pop_up_item2.addEventListener('click', function(event) {
+    pop_up_item2.addEventListener('click', function (event) {
         event.stopPropagation();
     })
 
@@ -269,7 +397,7 @@
         toast.classList.add('show');
         setTimeout(() => {
             toast.classList.remove('show');
-        }, 1000);   
+        }, 1000);
     }
 
     document.querySelectorAll('.copy').forEach(copyBtn => {
@@ -277,9 +405,9 @@
             const text = this.dataset.copy;
             navigator.clipboard.writeText(text).then(() => {
                 showToast();
-            console.log(`Đã copy: ${text}`);
+                console.log(`Đã copy: ${text}`);
             }).catch(err => {
-            console.error('Copy thất bại: ', err);
+                console.error('Copy thất bại: ', err);
             });
         });
     });
@@ -288,4 +416,3 @@
 
 
 </script>
-  
